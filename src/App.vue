@@ -1,28 +1,71 @@
 <template>
+   
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
+    <Header_ />
+    <Main_section_1 />
+    <Main_section_2 />
+    <Footer_top />
+    <Footer_bottom />
+
   </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header_ from "./components/Header_.vue"
+import Main_section_1 from "./components/Main_section_1.vue"
+import Main_section_2 from "./components/Main_section_2.vue"
+import Footer_top from "./components/Footer_top.vue"
+import Footer_bottom from "./components/Footer_bottom.vue"
 
 export default {
-  name: 'App',
+   
   components: {
-    HelloWorld
+    Header_,
+    Main_section_1,
+    Main_section_2,
+    Footer_top,
+    Footer_bottom,
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Greta Sans Condensed Bold","Greta Sans Bold",Arial,sans-serif;
+}
+
+.container{
+max-width: 1320px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.d-flex{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none ;
+  color: black;
 }
 </style>
