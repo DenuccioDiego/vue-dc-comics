@@ -1,6 +1,6 @@
 <template>
      <div class="d-flex">
-          <div class="col-2" v-for="item in cards" :key="item">
+          <div class="col-2" v-for="item in cards" :key="item.series">
                <img  :src="item.thumb" alt="">
                <p>{{item.series}}</p>
           </div>
@@ -11,6 +11,7 @@
 
 
 export default{
+  
      data(){
           return{
                cards:[
