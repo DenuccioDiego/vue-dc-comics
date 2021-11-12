@@ -1,8 +1,8 @@
 <template>
      <div class="d-flex">
-          <div v-for="item in cards" :key="item">
-               <img :src="item.thumb" alt=""><br>
-               <span>{{item.series}}</span>
+          <div class="col-2" v-for="item in cards" :key="item">
+               <img  :src="item.thumb" alt="">
+               <p>{{item.series}}</p>
           </div>
      </div>
 </template>
@@ -94,15 +94,17 @@ export default{
 
 <style scoped lang="scss">
 
-span{
-     font-size: 10px;
+.d-flex{
+     row-gap: 50px;
 }
 
-.d-flex{
-     
-     & div{
-          width: 10%;
-     }
+p{
+     font-size: 1rem;
+}
+
+
+.col-2{
+     width: calc(100% / 6);
 }
 
 </style>
