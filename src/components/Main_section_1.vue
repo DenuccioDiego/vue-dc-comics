@@ -1,15 +1,18 @@
 <template>
      <div id="section_1">
           <div class="container d-flex">
-               Content goes here 
+               <Cards />
           </div>    
      </div>
 </template>
 
 <script>
+import Cards from "./Cards.vue"
 
 export default {
-     
+     components:{
+          Cards,
+     }
 }
 </script>
 
