@@ -3,6 +3,7 @@
   <div id="app">
     
     <Header_ />
+    <Jumbotron />
     <Main_section_1 />
     <Main_section_2 />
     <Footer_top />
@@ -14,6 +15,7 @@
 
 <script>
 import Header_ from "./components/Header_.vue"
+import Jumbotron from "./components/Jumbotron.vue"
 import Main_section_1 from "./components/Main_section_1.vue"
 import Main_section_2 from "./components/Main_section_2.vue"
 import Footer_top from "./components/Footer_top.vue"
@@ -23,6 +25,7 @@ export default {
    
   components: {
     Header_,
+    Jumbotron,
     Main_section_1,
     Main_section_2,
     Footer_top,

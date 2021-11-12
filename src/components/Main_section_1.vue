@@ -34,8 +34,8 @@ export default {
 
 a{
      color: white;
-     background-color: blue;
-     padding: 20px 50px 20px 50px;
+     background-color: #0282f9;
+     padding: 15px 60px 15px 60px;
      font-size: 0.70rem;
 }
 
